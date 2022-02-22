@@ -4,7 +4,7 @@ import { RouteInfo } from './sidebar.metadata';
 export const ROUTES: RouteInfo[] = [
 
     {
-        path: '', title: 'Dashboard', icon: 'icon-home', class: 'has-sub', badge: '2', badgeClass: 'badge badge-pill badge-danger mt-1', isExternalLink: false, submenu: [
+        path: '', title: 'Overview', icon: 'icon-home', class: 'has-sub', badge: '', badgeClass: 'badge badge-pill badge-danger mt-1', isExternalLink: false, submenu: [
             { path: '/dashboard/eCommerce', title: 'eCommerce', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/dashboard/analytics', title: 'Analytics', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
         ]
