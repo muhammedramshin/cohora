@@ -9,17 +9,17 @@ const routes: Routes = [
     path: '',
     children: [
       {
-        path: 'eCommerce',
+        path: 'home',
         component: EcommerceComponent,
         data: {
-          title: 'Cohora'
+          title: 'Home'
         }
       },
       {
-        path: 'analytics',
+        path: 'dashboard',
         component: AnalyticsComponent,
         data: {
-          title: 'Analytics'
+          title: 'Dashboard'
         }
       },
     ]
