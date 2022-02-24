@@ -1,284 +1,375 @@
 <div class="row" style="display: grid;grid-template-columns:  24.7% 24.7% 24.5% 24.5%;column-gap: 12px;">
     <div class="gridItem">
         <div class="card bg-white">
-          <div class="card-body">
-            <div class="card-block pt-2 pb-0">
-              <div class="media">
-                <div class="media-body text-left">
-                  <div class="font-medium-5 card-title mb-1" style="font-size: 14px;color: black;">Visitors</div>
-                  <span></span>
+            <div class="card-body">
+                <div class="card-block pt-2 pb-0">
+                    <div class="media">
+                        <div class="media-body text-left">
+                            <div class="font-medium-5 card-title mb-1" style="font-size: 14px;color: black;">Visitors</div>
+                            <span></span>
+                        </div>
+                        <div class="media-right text-right">
+                            <!-- <i class="icon-cup font-large-1 primary"></i> -->
+                        </div>
+                    </div>
                 </div>
-                <div class="media-right text-right">
-                  <!-- <i class="icon-cup font-large-1 primary"></i> -->
+                <div id="Widget-area-chart1" class="height-150 WidgetAreaChart1 mb-2">
+                    <x-chartist class="" [data]="WidgetAreaChart1.data" [type]="WidgetAreaChart1.type" [options]="WidgetAreaChart1.options" [responsiveOptions]="WidgetAreaChart1.responsiveOptions" [events]="WidgetAreaChart1.events">
+                    </x-chartist>
                 </div>
-              </div>
             </div>
-            <div id="Widget-area-chart1" class="height-150 WidgetAreaChart1 mb-2">
-              <x-chartist class="" [data]="WidgetAreaChart1.data" [type]="WidgetAreaChart1.type" [options]="WidgetAreaChart1.options" [responsiveOptions]="WidgetAreaChart1.responsiveOptions" [events]="WidgetAreaChart1.events">
-              </x-chartist>
-            </div>
-          </div>
         </div>
-      </div>
-    <div class="gridItem">
-      <div class="card bg-white">
-        <div class="card-body">
-          <div class="card-block pt-2 pb-0">
-            <div class="media">
-              <div class="media-body text-left">
-                <div class="font-medium-5 card-title mb-1" style="font-size: 14px;color: black;">New Users</div>
-                <span></span>
-              </div>
-              <div class="media-right text-right">
-                <!-- <i class="icon-wallet font-large-1 warning"></i> -->
-              </div>
-            </div>
-          </div>
-          <div id="Widget-area-chart2" class="height-150 WidgetAreaChart2 mb-2">
-            <x-chartist class="" [data]="WidgetAreaChart2.data" [type]="WidgetAreaChart2.type" [options]="WidgetAreaChart2.options" [responsiveOptions]="WidgetAreaChart2.responsiveOptions" [events]="WidgetAreaChart2.events">
-            </x-chartist>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="gridItem">
-      <div class="card bg-white">
-        <div class="card-body">
-          <div class="card-block pt-2 pb-0">
-            <div class="media">
-              <div class="media-body text-left">
-                <div class="font-medium-5 card-title mb-1" style="font-size: 14px;color: black;">Total Users</div>
-                <!-- <span>Total Value</span> -->
-              </div>
-              <div class="media-right text-right">
-                <!-- <i class="icon-basket-loaded font-large-1 success"></i> -->
-              </div>
+        <div class="card bg-white">
+            <div class="card-body">
+                <div class="card-block pt-2 pb-0">
+                    <div class="media">
+                        <div class="media-body text-left">
+                            <div class="font-medium-5 card-title mb-1" style="font-size: 14px;color: black;">New Users</div>
+                            <span></span>
+                        </div>
+                        <div class="media-right text-right">
+                            <!-- <i class="icon-wallet font-large-1 warning"></i> -->
+                        </div>
+                    </div>
+                </div>
+                <div id="Widget-area-chart2" class="height-150 WidgetAreaChart2 mb-2">
+                    <x-chartist class="" [data]="WidgetAreaChart2.data" [type]="WidgetAreaChart2.type" [options]="WidgetAreaChart2.options" [responsiveOptions]="WidgetAreaChart2.responsiveOptions" [events]="WidgetAreaChart2.events">
+                    </x-chartist>
+                </div>
             </div>
-          </div>
-          <div id="Widget-area-chart3" class="height-150 WidgetAreaChart3 mb-2">
-            <x-chartist class="" [data]="WidgetAreaChart3.data" [type]="WidgetAreaChart3.type" [options]="WidgetAreaChart3.options" [responsiveOptions]="WidgetAreaChart3.responsiveOptions" [events]="WidgetAreaChart3.events">
-            </x-chartist>
-          </div>
         </div>
-      </div>
     </div>
     <div class="gridItem">
-      <div class="card bg-white">
-        <div class="card-body">
-          <div class="card-block pt-2 pb-0">
-            <div class="media">
-              <div class="media-body text-left">
-                <div class="font-medium-5 card-title mb-1" style="font-size: 14px;color: black;">Total Active Users</div>
-                <!-- <span>Total Value</span> -->
-              </div>
-              <div class="media-right text-right">
-                <!-- <i class="icon-basket-loaded font-large-1 success"></i> -->
-              </div>
+        <div class="card bg-white">
+            <div class="card-body">
+                <div class="card-block pt-2 pb-0">
+                    <div class="media">
+                        <div class="media-body text-left">
+                            <div class="font-medium-5 card-title mb-1" style="font-size: 14px;color: black;">Total Users</div>
+                            <!-- <span>Total Value</span> -->
+                        </div>
+                        <div class="media-right text-right">
+                            <!-- <i class="icon-basket-loaded font-large-1 success"></i> -->
+                        </div>
+                    </div>
+                </div>
+                <div id="Widget-area-chart3" class="height-150 WidgetAreaChart3 mb-2">
+                    <x-chartist class="" [data]="WidgetAreaChart3.data" [type]="WidgetAreaChart3.type" [options]="WidgetAreaChart3.options" [responsiveOptions]="WidgetAreaChart3.responsiveOptions" [events]="WidgetAreaChart3.events">
+                    </x-chartist>
+                </div>
             </div>
-          </div>
-          <div id="Widget-area-chart3" class="height-150 WidgetAreaChart3 mb-2">
-            <x-chartist class="" [data]="WidgetAreaChart3.data" [type]="WidgetAreaChart3.type" [options]="WidgetAreaChart3.options" [responsiveOptions]="WidgetAreaChart3.responsiveOptions" [events]="WidgetAreaChart3.events">
-            </x-chartist>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <!--Statistics cards Ends-->
-  <!--Line with Area Chart 1 Starts-->
-  <div class="row" style="display: grid;grid-template-columns: 50% 50%;column-gap: 12px;">
-    
+    <div class="gridItem">
+        <div class="card bg-white">
+            <div class="card-body">
+                <div class="card-block pt-2 pb-0">
+                    <div class="media">
+                        <div class="media-body text-left">
+                            <div class="font-medium-5 card-title mb-1" style="font-size: 14px;color: black;">Total Active Users</div>
+                            <!-- <span>Total Value</span> -->
+                        </div>
+                        <div class="media-right text-right">
+                            <!-- <i class="icon-basket-loaded font-large-1 success"></i> -->
+                        </div>
+                    </div>
+                </div>
+                <div id="Widget-area-chart3" class="height-150 WidgetAreaChart3 mb-2">
+                    <x-chartist class="" [data]="WidgetAreaChart3.data" [type]="WidgetAreaChart3.type" [options]="WidgetAreaChart3.options" [responsiveOptions]="WidgetAreaChart3.responsiveOptions" [events]="WidgetAreaChart3.events">
+                    </x-chartist>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Statistics cards Ends-->
+<!--Line with Area Chart 1 Starts-->
+<div class="row" style="display: grid;grid-template-columns: 50% 50%;column-gap: 12px;">
+
     <div id="recent-sales">
-      <div class="card" style="height: 414px;">
-        <div class="card-header">
-          <div class="card-title-wrap bar-primary">
-            <h4 class="card-title font">Schedule/Upcoming Activity</h4>
-          </div>
-          <a class="heading-elements-toggle">
-                      <i class="la la-ellipsis-v font-medium-3"></i>
-                  </a>
-        </div>
-        <div class="card-content mt-1">
-          <div class="table-responsive">
-            <table class="table table-hover table-xl mb-0" id="recent-orders">
-              <thead>
-                <tr>
-                  <th class="border-top-0">Date</th>
-                  <th class="border-top-0">Events</th>
-                  <th class="border-top-0">Author</th>
-                  <!-- <th class="border-top-0">Popularity</th>
+        <div class="card" style="height: 414px;">
+            <div class="card-header">
+                <div class="card-title-wrap bar-primary">
+                    <h4 class="card-title font">Schedule/Upcoming Activity</h4>
+                </div>
+                <a class="heading-elements-toggle">
+                    <i class="la la-ellipsis-v font-medium-3"></i>
+                </a>
+            </div>
+            <div class="card-content mt-1">
+                <div class="table-responsive">
+                    <table class="table table-hover table-xl mb-0" id="recent-orders">
+                        <thead>
+                            <tr>
+                                <th class="border-top-0">Date</th>
+                                <th class="border-top-0">Events</th>
+                                <th class="border-top-0">Author</th>
+                                <!-- <th class="border-top-0">Popularity</th>
                   <th class="border-top-0">Amount</th> -->
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="text-truncate">17/02/2022</td>
-                  <td class="text-truncate">ABC</td>
-                  
-                  <td class="text-truncate">Author</td>
-                </tr>
-                <tr>
-                  <td class="text-truncate">16/02/2022</td>
-                  <td class="text-truncate">EFG</td>
-                  
-                  <td class="text-truncate">Author1</td>
-                </tr>
-                <tr>
-                  <td class="text-truncate">18/02/2022</td>
-                  <td class="text-truncate">xyz</td>
-                  
-                  <td class="text-truncate">Author2</td>
-                </tr>
-                <tr>
-                  <td class="text-truncate">18/02/2022</td>
-                  <td class="text-truncate">PQR</td>
-                  
-                  <td class="text-truncate">Author3</td>
-                </tr>
-               
-              
-              </tbody>
-            </table>
-          </div>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-truncate">17/02/2022</td>
+                                <td class="text-truncate">ABC</td>
+
+                                <td class="text-truncate">Author</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">16/02/2022</td>
+                                <td class="text-truncate">EFG</td>
+
+                                <td class="text-truncate">Author1</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">18/02/2022</td>
+                                <td class="text-truncate">xyz</td>
+
+                                <td class="text-truncate">Author2</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">18/02/2022</td>
+                                <td class="text-truncate">PQR</td>
+
+                                <td class="text-truncate">Author3</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <div>
-      <div class="card" style="height: 414px;">
-        <div class="card-header">
-          <div class="card-title-wrap bar-danger">
-            <h4 class="card-title font">Top Active Users</h4>
-            <!-- <span style="margin-left: 40em;"><input type='text' style='padding:8px;margin:15px auto;width:30%;' placeholder='Type to filter the name column...' (keyup)='updateFilter($event)'
+        <div class="card" style="height: 414px;">
+            <div class="card-header">
+                <div class="card-title-wrap bar-danger">
+                    <h4 class="card-title font">Top Active Users</h4>
+                    <!-- <span style="margin-left: 40em;"><input type='text' style='padding:8px;margin:15px auto;width:30%;' placeholder='Type to filter the name column...' (keyup)='updateFilter($event)'
               /></span> -->
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="timeline-left" id="activity">
-            <!-- Filter Datatable Options Starts -->
-  <section id="filter" class="mb-3">
-    <!-- <div class="row">
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="timeline-left" id="activity">
+                    <!-- Filter Datatable Options Starts -->
+                    <section id="filter" class="mb-3">
+                        <!-- <div class="row">
         <div class="col-12">
             <div class="content-header">Top Active Users</div>
         </div>
     </div> -->
-    <div class="row">
-        <div class="col-sm-12">
-            <div>
-                <div class="card-body">
-                    <div class="card-block" style="padding-top: .1rem !important;">
-                        
-                        <ngx-datatable #table class='bootstrap' [columns]="columns" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50"
-                            [rowHeight]="'auto'" [limit]="10" [rows]='rows'>
-                        </ngx-datatable>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div>
+                                    <div class="card-body">
+                                        <div class="card-block" style="padding-top: .1rem !important;">
+
+                                            <ngx-datatable #table class='bootstrap' [columns]="columns" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50" [rowHeight]="'auto'" [limit]="10" [rows]='rows'>
+                                            </ngx-datatable>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Filter Datatable Options Ends -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Line with Area Chart 1 Ends-->
+<div class="row" matchHeight="card" style="display: grid;grid-template-columns: 50% 50%;column-gap: 12px;">
+    <div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title-wrap bar-warning">
+                    <h4 class="card-title font">Cohora FAQ</h4>
+                </div>
+            </div>
+            <div class="card-body p-3" style="font-size: 14px; color: black;">
+                <div><i class="fa fa-plus p-1" aria-hidden="true"></i><b>How do Brands migrate their customers from their CRM to the Community?</b></div>
+                <div class="p-3" style="max-height: 200px !important;overflow: auto;">
+                    <div>1.In Notification - you have to verify or will need to configure one-off email message for the customers and also as an incentive give the customer xxx amount of loyalty coins when they signup up.</div>
+                    <div>2.In loyalty setup - select the event and attribute the correct amount of Loyalty coins for first-time login.</div>
+                    <div>3.On Brand Admi, click on Customer View, and navigate to Import Customers.</div>
+                    <div>4.Download the Cohora file format, use this format to upload all your CRM contact.</div>
+                    <div>5.Use custom fields to add any new additional fields example sales history, last product purchase.</div>
+                    <div>6.Upload files by clicking on the choose file button.</div>
+                    <div>7.Profile insert mode - select the most appropriate filter.</div>
+                    <div>8.Send invite email to customers - select most appropriate “select to all customers in excel sheet”.</div>
+                    <div>9.The system will automatically create a pre-login and email the customer directly once you click on the import customers button.</div>
+                    <div>10.Use Thoughspot to track who has clicked and who has a login, who has visited the site
+                        <div class="pl-4">a.Click on ThoughtSpot under the Insight category, add your username and password, and analyze the data by dragging the attributes, dimensions, and metrics.</div>
+                    </div>
+                    <div>11.If Brand want, options - they can set up a reminder campaign to target these users.</div>
+                    <div>12.Pre setup engagement activities for the new users to nurture them through the adoption phase such as a chatroom, quiz, a contest for them, some unique offer…</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="recent-sales">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title-wrap bar-primary">
+                    <h4 class="card-title font">Contest-Quiz-Survey-Chatroom</h4>
+                </div>
+                <a class="heading-elements-toggle">
+                    <i class="la la-ellipsis-v font-medium-3"></i>
+                </a>
+            </div>
+            <div class="card-content mt-1">
+                <div class="table-responsive">
+                    <table class="table table-hover table-xl mb-0 font" id="recent-orders">
+                        <thead>
+                            <tr>
+                                <th class="border-top-0">Event Name</th>
+                                <th class="border-top-0">Participants</th>
+                                <th class="border-top-0">Status</th>
+                                <!-- <th class="border-top-0">Popularity</th>
+                  <th class="border-top-0">Amount</th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-truncate">ABC</td>
+                                <td class="text-truncate">Jim</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">EFG</td>
+                                <td class="text-truncate">Jack</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-success round mb-0" type="button">Tablet</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">PQR</td>
+                                <td class="text-truncate">Dolly</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">XYZ</td>
+                                <td class="text-truncate">Sam</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-success round mb-0" type="button">Tablet</button>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="display: grid;grid-template-columns:  auto auto auto auto auto auto auto;column-gap: 12px;">
+    <div class="card bg-success">
+        <div class="card-body">
+            <div class="px-3 py-3">
+                <div class="media">
+
+                    <div class="media-body text-white text-center">
+                        <h3 class="text-white">Cohora IQ</h3>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-  </section>
-  <!-- Filter Datatable Options Ends -->
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Line with Area Chart 1 Ends-->
-  <div class="row" matchHeight="card" style="display: grid;grid-template-columns: 50% 50%;column-gap: 12px;">
-    <div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title-wrap bar-warning">
-            <h4 class="card-title font">Cohora FAQ</h4>
-          </div>
-        </div>
-        <div class="card-body p-3" style="font-size: 14px; color: black;">
-          <div><i class="fa fa-plus p-1" aria-hidden="true"></i><b>How do Brands migrate their customers from their CRM to the Community?</b></div>
-          <div class="p-3" style="max-height: 200px !important;overflow: auto;">
-          <div>1.In Notification - you have to verify or will need to configure one-off email message for the customers and also as an 
-            incentive give the customer xxx amount of loyalty coins when they signup up.</div>
-            <div>2.In loyalty setup - select the event and attribute the correct amount of Loyalty coins for first-time login.</div>
-            <div>3.On Brand Admi, click on Customer View, and navigate to Import Customers.</div>
-            <div>4.Download the Cohora file format, use this format to upload all your CRM contact.</div>
-            <div>5.Use custom fields to add any new additional fields example sales history, last product purchase.</div>
-            <div>6.Upload files by clicking on the choose file button.</div>
-            <div>7.Profile insert mode - select the most appropriate filter.</div>
-            <div>8.Send invite email to customers - select most appropriate “select to all customers in excel sheet”.</div>
-            <div>9.The system will automatically create a pre-login and email the customer directly once you click on the import customers button.</div>
-            <div>10.Use Thoughspot to track who has clicked and who has a login, who has visited the site
-              <div class="pl-4">a.Click on ThoughtSpot under the Insight category, add your username and password, and analyze the data by dragging the attributes, dimensions, and metrics.</div>
+    <div class="card bg-danger">
+        <div class="card-body">
+            <div class="px-3 py-3">
+                <div class="media">
+
+                    <div class="media-body text-white text-center">
+                        <h3 class="text-white">Community</h3>
+
+                    </div>
+                </div>
             </div>
-            <div>11.If Brand want, options - they can set up a reminder campaign to target these users.</div>
-            <div>12.Pre setup engagement activities for the new users to nurture them through the adoption phase such as a chatroom, quiz, a contest for them, some unique offer…</div>
-          </div>
-          
         </div>
-      </div>
     </div>
-    <div id="recent-sales">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title-wrap bar-primary">
-            <h4 class="card-title font">Contest-Quiz-Survey-Chatroom</h4>
-          </div>
-          <a class="heading-elements-toggle">
-                      <i class="la la-ellipsis-v font-medium-3"></i>
-                  </a>
+    <div class="card bg-info">
+        <div class="card-body">
+            <div class="px-3 py-3">
+                <div class="media">
+
+                    <div class="media-body text-white text-center">
+                        <h3 class="text-white">Campaign</h3>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-content mt-1">
-          <div class="table-responsive">
-            <table class="table table-hover table-xl mb-0 font" id="recent-orders">
-              <thead>
-                <tr>
-                  <th class="border-top-0">Event Name</th>
-                  <th class="border-top-0">Participants</th>
-                  <th class="border-top-0">Status</th>
-                  <!-- <th class="border-top-0">Popularity</th>
-                  <th class="border-top-0">Amount</th> -->
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="text-truncate">ABC</td>
-                  <td class="text-truncate">Jim</td>
-                  <td>
-                    <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td class="text-truncate">EFG</td>
-                  <td class="text-truncate">Jack</td>
-                  <td>
-                    <button class="btn btn-sm btn-outline-success round mb-0" type="button">Tablet</button>
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td class="text-truncate">PQR</td>
-                  <td class="text-truncate">Dolly</td>
-                  <td>
-                    <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td class="text-truncate">XYZ</td>
-                  <td class="text-truncate">Sam</td>
-                  <td>
-                    <button class="btn btn-sm btn-outline-success round mb-0" type="button">Tablet</button>
-                  </td>
-                  
-                </tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  
+    <div class="card bg-warning">
+        <div class="card-body">
+            <div class="px-3 py-3">
+                <div class="media">
+
+                    <div class="media-body text-white text-center">
+                        <h3 class="text-white">Customer View</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card gradient-orange-amber">
+        <div class="card-body">
+            <div class="px-3 py-3">
+                <div class="media">
+
+                    <div class="media-body text-white text-center">
+                        <h3 class="text-white">ShopBuzz</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card gradient-light-blue-cyan">
+        <div class="card-body">
+            <div class="px-3 py-3">
+                <div class="media">
+
+                    <div class="media-body text-white text-center">
+                        <h3 class="text-white">Loyalty</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card gradient-red-pink">
+        <div class="card-body">
+            <div class="px-3 py-3">
+                <div class="media">
+
+                    <div class="media-body text-white text-center">
+                        <h3 class="text-white">Setting</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 <!-- <div class="row mt-2">
 
@@ -305,4 +396,3 @@
     </div>
 
 </div> -->
-
