@@ -1,5 +1,248 @@
 <!--Statistics cards Starts-->
 <div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title-wrap bar-success">
+                    <h4 class="card-title">Posts</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div id="line-area" class="height-400 lineArea">
+                        <x-chartist [data]="lineArea.data" [type]="lineArea.type" [options]="lineArea.options" [responsiveOptions]="lineArea.responsiveOptions" [events]="lineArea.events">
+                        </x-chartist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title-wrap bar-success">
+                    <h4 class="card-title">Post view</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div id="line-area" class="height-400 lineArea">
+                        <x-chartist [data]="lineArea.data" [type]="lineArea.type" [options]="lineArea.options" [responsiveOptions]="lineArea.responsiveOptions" [events]="lineArea.events">
+                        </x-chartist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title-wrap bar-success">
+                    <h4 class="card-title">Product views</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div id="line-area" class="height-400 lineArea">
+                        <x-chartist [data]="lineArea.data" [type]="lineArea.type" [options]="lineArea.options" [responsiveOptions]="lineArea.responsiveOptions" [events]="lineArea.events">
+                        </x-chartist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="col-md-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title-wrap bar-warning">
+                            <h4 class="card-title">Chat message</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-block">
+                            <div id="line-area" class="height-400 lineArea">
+                                <x-chartist [data]="lineArea.data" [type]="lineArea.type" [options]="lineArea.options" [responsiveOptions]="lineArea.responsiveOptions" [events]="lineArea.events">
+                                </x-chartist>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title-wrap bar-success">
+                <h4 class="card-title">Posts</h4>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="card-block">
+                <div id="line-area" class="height-400 twoLinesArea">
+                    <x-chartist [data]="twoLinesArea.data" [type]="twoLinesArea.type" [options]="twoLinesArea.options" [responsiveOptions]="twoLinesArea.responsiveOptions" [events]="twoLinesArea.events">
+                    </x-chartist>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title-wrap bar-danger">
+                    <h4 class="card-title">Total Loyality given</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div id="bar-chart" class="height-400">
+                        <x-chartist [data]="barChart.data" [type]="barChart.type" [options]="barChart.options" [responsiveOptions]="barChart.responsiveOptions" [events]="barChart.events">
+                        </x-chartist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title-wrap bar-danger">
+                    <h4 class="card-title">Comments</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div id="bar-chart" class="height-400">
+                        <x-chartist [data]="barChart.data" [type]="barChart.type" [options]="barChart.options" [responsiveOptions]="barChart.responsiveOptions" [events]="barChart.events">
+                        </x-chartist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title-wrap bar-danger">
+                    <h4 class="card-title">Posts</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div id="bar-chart" class="height-400">
+                        <x-chartist [data]="barChart.data" [type]="barChart.type" [options]="barChart.options" [responsiveOptions]="barChart.responsiveOptions" [events]="barChart.events">
+                        </x-chartist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title-wrap bar-danger">
+                    <h4 class="card-title">Assets</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div id="bar-chart" class="height-400">
+                        <x-chartist [data]="barChart.data" [type]="barChart.type" [options]="barChart.options" [responsiveOptions]="barChart.responsiveOptions" [events]="barChart.events">
+                        </x-chartist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title-wrap bar-danger">
+                    <h4 class="card-title">Contest entries</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div id="bar-chart" class="height-400">
+                        <x-chartist [data]="barChart.data" [type]="barChart.type" [options]="barChart.options" [responsiveOptions]="barChart.responsiveOptions" [events]="barChart.events">
+                        </x-chartist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title-wrap bar-danger">
+                    <h4 class="card-title">Product Redirect</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div id="bar-chart" class="height-400">
+                        <x-chartist [data]="barChart.data" [type]="barChart.type" [options]="barChart.options" [responsiveOptions]="barChart.responsiveOptions" [events]="barChart.events">
+                        </x-chartist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap bar-warning">
+                        <h4 class="card-title">Statics</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-block">
+                        <div id="donut-chart2" class="height-400">
+                            <x-chartist [data]="donutChart2.data" [type]="donutChart2.type" [options]="donutChart2.options" [responsiveOptions]="donutChart2.responsiveOptions" [events]="donutChart2.events">
+                            </x-chartist>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <div class="row">
     <div class="col-xl-4 col-lg-6 col-md-6 col-12">
         <div class="card bg-white">
             <div class="card-body">
@@ -15,8 +258,7 @@
                     </div>
                 </div>
                 <div id="Widget-area-chart4" class="height-150 WidgetAreaChart4 WidgetAreaChart4shadow mb-2">
-                    <x-chartist class="" [data]="WidgetAreaChart4.data" [type]="WidgetAreaChart4.type" [options]="WidgetAreaChart4.options" [responsiveOptions]="WidgetAreaChart4.responsiveOptions"
-                        [events]="WidgetAreaChart4.events">
+                    <x-chartist class="" [data]="WidgetAreaChart4.data" [type]="WidgetAreaChart4.type" [options]="WidgetAreaChart4.options" [responsiveOptions]="WidgetAreaChart4.responsiveOptions" [events]="WidgetAreaChart4.events">
                     </x-chartist>
                 </div>
             </div>
@@ -37,8 +279,7 @@
                     </div>
                 </div>
                 <div id="Widget-area-chart5" class="height-150 WidgetAreaChart5 WidgetAreaChart5shadow mb-2">
-                    <x-chartist class="" [data]="WidgetAreaChart5.data" [type]="WidgetAreaChart5.type" [options]="WidgetAreaChart5.options" [responsiveOptions]="WidgetAreaChart5.responsiveOptions"
-                        [events]="WidgetAreaChart5.events">
+                    <x-chartist class="" [data]="WidgetAreaChart5.data" [type]="WidgetAreaChart5.type" [options]="WidgetAreaChart5.options" [responsiveOptions]="WidgetAreaChart5.responsiveOptions" [events]="WidgetAreaChart5.events">
                     </x-chartist>
                 </div>
 
@@ -61,8 +302,7 @@
                     </div>
                 </div>
                 <div id="Widget-area-chart6" class="height-150 WidgetAreaChart6 WidgetAreaChart6shadow mb-2">
-                    <x-chartist class="" [data]="WidgetAreaChart6.data" [type]="WidgetAreaChart6.type" [options]="WidgetAreaChart6.options" [responsiveOptions]="WidgetAreaChart6.responsiveOptions"
-                        [events]="WidgetAreaChart6.events">
+                    <x-chartist class="" [data]="WidgetAreaChart6.data" [type]="WidgetAreaChart6.type" [options]="WidgetAreaChart6.options" [responsiveOptions]="WidgetAreaChart6.responsiveOptions" [events]="WidgetAreaChart6.events">
                     </x-chartist>
                 </div>
             </div>
@@ -81,8 +321,7 @@
             <div class="card-body">
                 <div class="card-block">
                     <div id="line-area6" class="height-350 lineArea6 lineArea6Shadow">
-                        <x-chartist [data]="lineArea6.data" [type]="lineArea6.type" [options]="lineArea6.options" [responsiveOptions]="lineArea6.responsiveOptions"
-                            [events]="lineArea6.events">
+                        <x-chartist [data]="lineArea6.data" [type]="lineArea6.type" [options]="lineArea6.options" [responsiveOptions]="lineArea6.responsiveOptions" [events]="lineArea6.events">
                         </x-chartist>
                     </div>
                 </div>
@@ -100,160 +339,160 @@
                 <div class="card-block chat-application">
                     <div class="chats height-300 overflow-y-scroll">
                         <div class="chats">
-                          <div class="chat">
-                            <div class="chat-avatar">
-                              <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-                                  <img src="assets/img/portrait/small/avatar-s-19.jpg" alt="avatar" />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-content">
-                                <p>How can we help? We're here for you!</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-                                <img src="assets/img/portrait/small/avatar-s-15.jpg" alt="avatar" />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-content">
-                                <p>Hey Jacob, Could you please help me to find it out?</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat">
-                            <div class="chat-avatar">
-                              <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-                                <img src="assets/img/portrait/small/avatar-s-19.jpg" alt="avatar" />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-content">
-                                <p>Absolutely!</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-                                <img src="assets/img/portrait/small/avatar-s-15.jpg" alt="avatar" />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-content">
-                                <p>I am looking for the best Angular admin template.</p>
-                                <p>It should be Bootstrap 4 compatible.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat">
-                            <div class="chat-avatar">
-                              <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-                                <img src="assets/img/portrait/small/avatar-s-19.jpg" alt="avatar" />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-content">
-                                <p>Convex admin template is responsive Angular 6+ bootstrap 4 admin template.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-                                <img src="assets/img/portrait/small/avatar-s-15.jpg" alt="avatar" />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-content">
-                                <p>Looks clean and fresh UI.</p>
-                              </div>
-                              <div class="chat-content">
-                                <p>It's perfect for my next project.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat">
-                            <div class="chat-avatar">
-                              <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-                                <img src="assets/img/portrait/small/avatar-s-19.jpg" alt="avatar" />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-content">
-                                <p>Thanks a lot!</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-                                <img src="assets/img/portrait/small/avatar-s-15.jpg" alt="avatar" />
-                              </a>
-                            </div>
-                            <div class="chat-body">
-                                <div class="chat-content">
-                                  <p>How can I purchase it?</p>
+                            <div class="chat">
+                                <div class="chat-avatar">
+                                    <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+                                        <img src="assets/img/portrait/small/avatar-s-19.jpg" alt="avatar" />
+                                    </a>
+                                </div>
+                                <div class="chat-body">
+                                    <div class="chat-content">
+                                        <p>How can we help? We're here for you!</p>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                          <div class="chat">
-                            <div class="chat-avatar">
-                              <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-                                <img src="assets/img/portrait/small/avatar-s-19.jpg" alt="avatar" />
-                              </a>
+                            <div class="chat chat-left">
+                                <div class="chat-avatar">
+                                    <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
+                                        <img src="assets/img/portrait/small/avatar-s-15.jpg" alt="avatar" />
+                                    </a>
+                                </div>
+                                <div class="chat-body">
+                                    <div class="chat-content">
+                                        <p>Hey Jacob, Could you please help me to find it out?</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="chat-body">
-                              <div class="chat-content">
-                                <p>From Wrapbootstrap.</p>
-                              </div>
+                            <div class="chat">
+                                <div class="chat-avatar">
+                                    <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+                                        <img src="assets/img/portrait/small/avatar-s-19.jpg" alt="avatar" />
+                                    </a>
+                                </div>
+                                <div class="chat-body">
+                                    <div class="chat-content">
+                                        <p>Absolutely!</p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                          <div class="chat chat-left">
-                            <div class="chat-avatar">
-                              <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-                                <img src="assets/img/portrait/small/avatar-s-15.jpg" alt="avatar" />
-                              </a>
+                            <div class="chat chat-left">
+                                <div class="chat-avatar">
+                                    <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
+                                        <img src="assets/img/portrait/small/avatar-s-15.jpg" alt="avatar" />
+                                    </a>
+                                </div>
+                                <div class="chat-body">
+                                    <div class="chat-content">
+                                        <p>I am looking for the best Angular admin template.</p>
+                                        <p>It should be Bootstrap 4 compatible.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="chat-body">
-                              <div class="chat-content">
-                                <p>I will purchase it for sure.</p>
-                              </div>
-                              <div class="chat-content">
-                                <p>Thanks.</p>
-                              </div>              
+                            <div class="chat">
+                                <div class="chat-avatar">
+                                    <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+                                        <img src="assets/img/portrait/small/avatar-s-19.jpg" alt="avatar" />
+                                    </a>
+                                </div>
+                                <div class="chat-body">
+                                    <div class="chat-content">
+                                        <p>Convex admin template is responsive Angular 6+ bootstrap 4 admin template.</p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                          <div class="chat">
-                            <div class="chat-avatar">
-                              <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-                                <img src="assets/img/portrait/small/avatar-s-19.jpg" alt="avatar" />
-                              </a>
+                            <div class="chat chat-left">
+                                <div class="chat-avatar">
+                                    <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
+                                        <img src="assets/img/portrait/small/avatar-s-15.jpg" alt="avatar" />
+                                    </a>
+                                </div>
+                                <div class="chat-body">
+                                    <div class="chat-content">
+                                        <p>Looks clean and fresh UI.</p>
+                                    </div>
+                                    <div class="chat-content">
+                                        <p>It's perfect for my next project.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="chat-body">
-                              <div class="chat-content">
-                                <p>Great!!</p>
-                              </div>
+                            <div class="chat">
+                                <div class="chat-avatar">
+                                    <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+                                        <img src="assets/img/portrait/small/avatar-s-19.jpg" alt="avatar" />
+                                    </a>
+                                </div>
+                                <div class="chat-body">
+                                    <div class="chat-content">
+                                        <p>Thanks a lot!</p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
+                            <div class="chat chat-left">
+                                <div class="chat-avatar">
+                                    <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
+                                        <img src="assets/img/portrait/small/avatar-s-15.jpg" alt="avatar" />
+                                    </a>
+                                </div>
+                                <div class="chat-body">
+                                    <div class="chat-content">
+                                        <p>How can I purchase it?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat">
+                                <div class="chat-avatar">
+                                    <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+                                        <img src="assets/img/portrait/small/avatar-s-19.jpg" alt="avatar" />
+                                    </a>
+                                </div>
+                                <div class="chat-body">
+                                    <div class="chat-content">
+                                        <p>From Wrapbootstrap.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat chat-left">
+                                <div class="chat-avatar">
+                                    <a class="avatar" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
+                                        <img src="assets/img/portrait/small/avatar-s-15.jpg" alt="avatar" />
+                                    </a>
+                                </div>
+                                <div class="chat-body">
+                                    <div class="chat-content">
+                                        <p>I will purchase it for sure.</p>
+                                    </div>
+                                    <div class="chat-content">
+                                        <p>Thanks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat">
+                                <div class="chat-avatar">
+                                    <a class="avatar" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
+                                        <img src="assets/img/portrait/small/avatar-s-19.jpg" alt="avatar" />
+                                    </a>
+                                </div>
+                                <div class="chat-body">
+                                    <div class="chat-content">
+                                        <p>Great!!</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <form class="chat-app-input mt-4 row">
-                      <fieldset class="form-group position-relative has-icon-left col-xl-10 col-lg-8 col-8 m-0 mb-1">
-                        <div class="form-control-position">
-                          <i class="icon-emoticon-smile"></i>
-                        </div>
-                        <input type="text" class="form-control" id="iconLeft4" placeholder="Type your message">
-                        <div class="form-control-position control-position-right">
-                          <i class="ft-image"></i>
-                        </div>
-                      </fieldset>
-                      <fieldset class="form-group position-relative has-icon-left col-2 m-0">
-                        <button type="button" class="btn btn-primary"><i class="fa fa-paper-plane white"></i> </button>
-                      </fieldset>
+                        <fieldset class="form-group position-relative has-icon-left col-xl-10 col-lg-8 col-8 m-0 mb-1">
+                            <div class="form-control-position">
+                                <i class="icon-emoticon-smile"></i>
+                            </div>
+                            <input type="text" class="form-control" id="iconLeft4" placeholder="Type your message">
+                            <div class="form-control-position control-position-right">
+                                <i class="ft-image"></i>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-group position-relative has-icon-left col-2 m-0">
+                            <button type="button" class="btn btn-primary"><i class="fa fa-paper-plane white"></i> </button>
+                        </fieldset>
                     </form>
                 </div>
             </div>
@@ -276,7 +515,7 @@
                         <table id="recent-orders" class="table table-hover table-xl mb-0">
                             <thead>
                                 <tr>
-                                    <th class="border-top-0">Status</th>                                
+                                    <th class="border-top-0">Status</th>
                                     <th class="border-top-0">Invoice#</th>
                                     <th class="border-top-0">Customer Name</th>
                                     <th class="border-top-0">Products</th>
@@ -296,7 +535,7 @@
                                         <span>Elizabeth W.</span>
                                     </td>
                                     <td class="text-truncate p-1">
-                                        <ul class="list-unstyled users-list m-0">                                               
+                                        <ul class="list-unstyled users-list m-0">
                                             <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
                                                 <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="assets/img/portfolio/portfolio-1.jpg" alt="Avatar">
                                             </li>
@@ -306,7 +545,7 @@
                                             <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Rebecca Jones" class="avatar avatar-sm pull-up">
                                                 <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="assets/img/portfolio/portfolio-4.jpg" alt="Avatar">
                                             </li>
-                                            <li class="avatar avatar-sm">                                            
+                                            <li class="avatar avatar-sm">
                                                 <span class="badge badge-info">+1 more</span>
                                             </li>
                                         </ul>
@@ -329,14 +568,14 @@
                                         <span>Doris R.</span>
                                     </td>
                                     <td class="text-truncate p-1">
-                                        <ul class="list-unstyled users-list m-0">                                               
+                                        <ul class="list-unstyled users-list m-0">
                                             <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
                                                 <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="assets/img/portfolio/portfolio-5.jpg" alt="Avatar">
                                             </li>
                                             <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Willie Torres" class="avatar avatar-sm pull-up">
                                                 <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="assets/img/portfolio/portfolio-6.jpg" alt="Avatar">
-                                            </li>                                        
-                                            <li class="avatar avatar-sm">                                            
+                                            </li>
+                                            <li class="avatar avatar-sm">
                                                 <span class="badge badge-info">+2 more</span>
                                             </li>
                                         </ul>
@@ -359,7 +598,7 @@
                                         <span>Megan S.</span>
                                     </td>
                                     <td class="text-truncate p-1">
-                                        <ul class="list-unstyled users-list m-0">                                               
+                                        <ul class="list-unstyled users-list m-0">
                                             <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
                                                 <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="assets/img/portfolio/portfolio-2.jpg" alt="Avatar">
                                             </li>
@@ -386,14 +625,14 @@
                                         <span>Andrew D.</span>
                                     </td>
                                     <td class="text-truncate p-1">
-                                        <ul class="list-unstyled users-list m-0">                                               
+                                        <ul class="list-unstyled users-list m-0">
                                             <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
                                                 <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="assets/img/portfolio/portfolio-6.jpg" alt="Avatar">
                                             </li>
                                             <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Willie Torres" class="avatar avatar-sm pull-up">
                                                 <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="assets/img/portfolio/portfolio-1.jpg" alt="Avatar">
                                             </li>
-                                            <li class="avatar avatar-sm">                                            
+                                            <li class="avatar avatar-sm">
                                                 <span class="badge badge-info">+1 more</span>
                                             </li>
                                         </ul>
@@ -416,7 +655,7 @@
                                         <span>Walter R.</span>
                                     </td>
                                     <td class="text-truncate p-1">
-                                        <ul class="list-unstyled users-list m-0">                                               
+                                        <ul class="list-unstyled users-list m-0">
                                             <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
                                                 <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="assets/img/portfolio/portfolio-5.jpg" alt="Avatar">
                                             </li>
@@ -514,8 +753,7 @@
                             <i class="fa fa-circle warning font-small-2 mr-1"></i> Progress</span>
                     </div>
                     <div id="line-chart2" class="height-350 lineChart2 lineChart2Shadow">
-                        <x-chartist class="" [data]="lineChart2.data" [type]="lineChart2.type" [options]="lineChart2.options" [responsiveOptions]="lineChart2.responsiveOptions"
-                            [events]="lineChart2.events">
+                        <x-chartist class="" [data]="lineChart2.data" [type]="lineChart2.type" [options]="lineChart2.options" [responsiveOptions]="lineChart2.responsiveOptions" [events]="lineChart2.events">
                         </x-chartist>
                     </div>
                 </div>
@@ -541,8 +779,7 @@
                             <i class="fa fa-circle success font-small-2 mr-1"></i> Products</span>
                     </div>
                     <div id="line-area-chart" class="height-300 lineAreaChart lineAreaChartShadow mb-1">
-                        <x-chartist class="" [data]="lineAreaChart.data" [type]="lineAreaChart.type" [options]="lineAreaChart.options" [responsiveOptions]="lineAreaChart.responsiveOptions"
-                            [events]="lineAreaChart.events">
+                        <x-chartist class="" [data]="lineAreaChart.data" [type]="lineAreaChart.type" [options]="lineAreaChart.options" [responsiveOptions]="lineAreaChart.responsiveOptions" [events]="lineAreaChart.events">
 
                         </x-chartist>
                     </div>
@@ -623,4 +860,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

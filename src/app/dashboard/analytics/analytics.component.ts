@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import * as Chartist from 'chartist';
 import { ChartType, ChartEvent } from "ng-chartist";
+import * as chartsData from '../../shared/configs/ngx-charts.config';
 
 declare var require: any;
 
@@ -22,7 +23,98 @@ export interface Chart {
 })
 
 export class AnalyticsComponent {
+    twoLinesArea: Chart = {
+        type: 'Line',
+        data: data['twoLinesArea'],
+        options: {
+            low: 0,
+            showArea: true,
+            fullWidth: true,
+            onlyInteger: true,
+            axisY: {
+                low: 0,
+                scaleMinSpace: 50,
+            },
+            axisX: {
+                showGrid: false
+            },
+            // lineSmooth: Chartist.Interpolation.simple({
+            //     divisor: 2
+            // }),
+        },
+        events: {
+            draw(data: any): void {
+                if (data.type === 'point') {
+                    var circle = new Chartist.Svg('circle', {
+                        cx: [data.x], cy: [data.y], r: [10],
+                    }, 'ct-circle');
+                    data.element.replace(circle);
+                }
+            }
 
+        },
+    };
+
+
+
+    lineArea: Chart = {
+        type: 'Line',
+        data: data['lineArea'],
+        options: {
+            low: 0,
+            showArea: true,
+            fullWidth: true,
+            onlyInteger: true,
+            axisY: {
+                low: 0,
+                scaleMinSpace: 50,
+            },
+            axisX: {
+                showGrid: false
+            },
+            // lineSmooth: Chartist.Interpolation.simple({
+            //     divisor: 2
+            // }),
+        },
+        events: {
+            draw(data: any): void {
+                if (data.type === 'point') {
+                    var circle = new Chartist.Svg('circle', {
+                        cx: [data.x], cy: [data.y], r: [10],
+                    }, 'ct-circle');
+                    data.element.replace(circle);
+                }
+            }
+
+        },
+    };
+
+
+    barChart: Chart = {
+        type: 'Bar',
+        data: data['Bar'],
+        options: {
+            seriesBarDistance: 21,
+            axisX: {
+                showGrid: false, offset: 100
+            },
+            axisY: {
+                scaleMinSpace: 30,
+            }
+        },
+    };
+
+
+    donutChart2: Chart = {
+        type: 'Pie',
+        data: data['donut'],
+        options: {
+            donut: true,
+            showLabel: true,
+            labelDirection: 'implode',
+
+        },
+    };
     
     // Widget Area chart 4 configuration Starts
     WidgetAreaChart4: Chart = {
