@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from "@angular/common";
-
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { DashboardRoutingModule } from "./dashboard-routing.module";
 import { ChartistModule } from 'ng-chartist';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -16,7 +16,8 @@ import { AnalyticsComponent } from "./analytics/analytics.component";
         DashboardRoutingModule,
         ChartistModule,
         NgbModule,
-        MatchHeightModule
+        MatchHeightModule,
+      NgxDatatableModule
     ],
     exports: [],
     declarations: [

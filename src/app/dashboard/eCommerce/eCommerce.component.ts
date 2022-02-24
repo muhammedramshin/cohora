@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
 import * as Chartist from 'chartist';
 import { ChartType, ChartEvent } from "ng-chartist";
+import { DatatableComponent } from "@swimlane/ngx-datatable/release";
+//import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 declare var require: any;
+const topUserData: any = require('../../shared/data/company.json');
 
 const data: any = require('../../shared/data/chartist.json');
 
@@ -21,6 +24,34 @@ export interface Chart {
 })
 
 export class EcommerceComponent {
+    rows = [];
+
+    temp = [];
+    columns = [
+        { prop: 'name' },
+        { name: 'Loyalty Points' },
+        { name: 'Last Activity' }
+    ];
+    @ViewChild(DatatableComponent, { static: true }) table: DatatableComponent;
+
+    constructor() {
+        this.temp = [...topUserData];
+        this.rows = topUserData;
+    }
+
+    updateFilter(event) {
+        const val = event.target.value.toLowerCase();
+
+        // filter our data
+        const temp = this.temp.filter(function (d) {
+            return d.name.toLowerCase().indexOf(val) !== -1 || !val;
+        });
+
+        // update the rows
+        this.rows = temp;
+        // Whenever the filter changes, always go back to the first page
+        this.table.offset = 0;
+    }
 
  // Line Chart Starts
  lineChart: Chart = {
