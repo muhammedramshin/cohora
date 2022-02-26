@@ -89,7 +89,7 @@
 <div class="row" style="display: grid;grid-template-columns: 50% 50%;column-gap: 12px;">
 
     <div id="recent-sales">
-        <div class="card" style="height: 414px;">
+        <div class="card" style="height: 440px;">
             <div class="card-header">
                 <div class="card-title-wrap bar-primary">
                     <h4 class="card-title font">Schedule/Upcoming Activity</h4>
@@ -98,7 +98,9 @@
                     <i class="la la-ellipsis-v font-medium-3"></i>
                 </a>
             </div>
-            <div class="card-content mt-1">
+            <div class="card-body">
+                <div class="card-block">
+            
                 <div class="table-responsive">
                     <table class="table table-hover table-xl mb-0" id="recent-orders">
                         <thead>
@@ -113,38 +115,80 @@
                         <tbody>
                             <tr>
                                 <td class="text-truncate">17/02/2022</td>
-                                <td class="text-truncate">ABC</td>
+                                <td class="text-truncate">
+                                    <ul class="list-unstyled users-list m-0">                                               
+                                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                            <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="assets/img/portfolio/portfolio-1.jpg" alt="Avatar">
+                                        </li>
+                                        XYZ
+                                    </ul>
+                                </td>
 
                                 <td class="text-truncate">Author</td>
                             </tr>
                             <tr>
                                 <td class="text-truncate">16/02/2022</td>
-                                <td class="text-truncate">EFG</td>
+                                <td class="text-truncate">
+                                    <ul class="list-unstyled users-list m-0">                                               
+                                    
+                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Willie Torres" class="avatar avatar-sm pull-up">
+                                        <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="assets/img/portfolio/portfolio-6.jpg" alt="Avatar">
+                                    </li>                                        
+                                    PQR
+                                </ul>
+                            </td>
 
                                 <td class="text-truncate">Author1</td>
                             </tr>
                             <tr>
                                 <td class="text-truncate">18/02/2022</td>
-                                <td class="text-truncate">xyz</td>
+                                <td class="text-truncate">
+                                    <ul class="list-unstyled users-list m-0">                                               
+                                        
+                                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Willie Torres" class="avatar avatar-sm pull-up">
+                                            <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="assets/img/portfolio/portfolio-5.jpg" alt="Avatar">
+                                        </li>EFG
+                                    </ul>
+                                </td>
 
                                 <td class="text-truncate">Author2</td>
                             </tr>
                             <tr>
                                 <td class="text-truncate">18/02/2022</td>
-                                <td class="text-truncate">PQR</td>
+                                <td class="text-truncate">
+                                    <ul class="list-unstyled users-list m-0">                                               
+                                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                            <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="assets/img/portfolio/portfolio-6.jpg" alt="Avatar">
+                                        </li>
+                                        PQR
+                                    </ul>
+                                </td>
 
                                 <td class="text-truncate">Author3</td>
                             </tr>
+                            <tr>
+                                <td class="text-truncate">28/02/2022</td>
+                                <td class="text-truncate">
+                                    <ul class="list-unstyled users-list m-0">                                               
+                                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                            <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="assets/img/portfolio/portfolio-2.jpg" alt="Avatar">
+                                        </li>
+                                        ABC
+                                    </ul>
+                                </td>
 
+                                <td class="text-truncate">Author7</td>
+                            </tr>
 
                         </tbody>
                     </table>
+                </div>
                 </div>
             </div>
         </div>
     </div>
     <div>
-        <div class="card" style="height: 414px;">
+        <div class="card" style="height: 440px;">
             <div class="card-header">
                 <div class="card-title-wrap bar-danger">
                     <h4 class="card-title font">Top Active Users</h4>
@@ -153,30 +197,110 @@
                 </div>
             </div>
             <div class="card-body">
-                <div class="timeline-left" id="activity">
-                    <!-- Filter Datatable Options Starts -->
-                    <section id="filter" class="mb-3">
-                        <!-- <div class="row">
-        <div class="col-12">
-            <div class="content-header">Top Active Users</div>
-        </div>
-    </div> -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div>
-                                    <div class="card-body">
-                                        <div class="card-block" style="padding-top: .1rem !important;">
-
-                                            <ngx-datatable #table class='bootstrap' [columns]="columns" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50" [rowHeight]="'auto'" [limit]="10" [rows]='rows'>
-                                            </ngx-datatable>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Filter Datatable Options Ends -->
-
+                <div class="card-block">
+                    <div class="table-responsive">
+                        <table id="recent-orders" class="table table-hover table-xl mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="border-top-0">Name</th>                                
+                                    <th class="border-top-0">City/Region</th>
+                                    <th class="border-top-0">Loyalty Points</th>
+                                    <th class="border-top-0">Last Activity</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="height: 57px !important;">
+                                    
+                                    <td class="text-truncate">
+                                        <span class="avatar avatar-xs" style="cursor: pointer;">
+                                            <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-4.jpg" alt="avatar">
+                                        </span>
+                                        <span>Elizabeth W.</span>
+                                    </td>
+                                    <td>Europe</td>
+                                    <td>
+                                        9
+                                    </td>
+                                    <td>
+                                        26/02/2022
+                                    </td>
+                                    
+                                </tr>
+                                <tr style="height: 59px !important;">
+                                    
+                                    <td class="text-truncate">
+                                        <span class="avatar avatar-xs" style="cursor: pointer;">
+                                            <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-5.jpg" alt="avatar">
+                                        </span>
+                                        <span>Doris R.</span>
+                                    </td>
+                                    <td>Europe</td>
+                                    
+                                    <td>
+                                        8
+                                    </td>
+                                    <td>
+                                       26/02/2022
+                                    </td>
+                                   
+                                </tr>
+                                <tr style="height: 56px !important;">
+                                    
+                                    <td class="text-truncate">
+                                        <span class="avatar avatar-xs" style="cursor: pointer;">
+                                            <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-6.jpg" alt="avatar">
+                                        </span>
+                                        <span>Megan S.</span>
+                                    </td>
+                                    <td>Asia</td>
+                                    
+                                    <td>
+                                        7.5
+                                    </td>
+                                    <td>
+                                        25/02/2022
+                                    </td>
+                                   
+                                </tr>
+                                <tr style="height: 58px !important;">
+                                    
+                                    <td class="text-truncate">
+                                        <span class="avatar avatar-xs" style="cursor: pointer;">
+                                            <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-7.jpg" alt="avatar">
+                                        </span>
+                                        <span>Andrew D.</span>
+                                    </td>
+                                    <td>Europe</td>
+                                    <td>
+                                        7.1
+                                    </td>
+                                    <td>
+                                        11/01/2022
+                                    </td>
+                                    
+                                </tr>
+                                <tr style="height: 59px !important;">
+                                    
+                                    <td class="text-truncate">
+                                        <span class="avatar avatar-xs" style="cursor: pointer;">
+                                            <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-9.jpg" alt="avatar">
+                                        </span>
+                                        <span>Walter R.</span>
+                                    </td>
+                                    <td>Asia</td>
+                                    
+                                    <td>
+                                        6
+                                    </td>
+                                    <td>
+                                       05/02/2022
+                                    </td>
+                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -238,33 +362,49 @@
                         <tbody>
                             <tr>
                                 <td class="text-truncate">ABC</td>
-                                <td class="text-truncate">Jim</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs" style="cursor: pointer;">
+                                        <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-4.jpg" alt="avatar">
+                                    </span>Jim
+                                </td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
+                                    Pass
                                 </td>
 
                             </tr>
                             <tr>
                                 <td class="text-truncate">EFG</td>
-                                <td class="text-truncate">Jack</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs" style="cursor: pointer;">
+                                        <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-5.jpg" alt="avatar">
+                                    </span>Jack
+                                </td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-success round mb-0" type="button">Tablet</button>
+                                    Fail
                                 </td>
 
                             </tr>
                             <tr>
                                 <td class="text-truncate">PQR</td>
-                                <td class="text-truncate">Dolly</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs" style="cursor: pointer;">
+                                        <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-6.jpg" alt="avatar">
+                                    </span>
+                                    Dolly</td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
+                                    Pass
                                 </td>
 
                             </tr>
                             <tr>
                                 <td class="text-truncate">XYZ</td>
-                                <td class="text-truncate">Sam</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs" style="cursor: pointer;">
+                                        <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-7.jpg" alt="avatar">
+                                    </span>
+                                    Sam</td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-success round mb-0" type="button">Tablet</button>
+                                    Pass
                                 </td>
 
                             </tr>
@@ -283,8 +423,8 @@
             <div class="px-3 py-3">
                 <div class="media">
 
-                    <div class="media-body text-white text-center">
-                        <h3 class="text-white">Cohora IQ</h3>
+                    <div class="media-body text-white text-center" style="cursor: pointer;">
+                        <h3 class="text-white" style="font-size: 1.4rem !important;">Cohora IQ</h3>
 
                     </div>
                 </div>
@@ -296,8 +436,8 @@
             <div class="px-3 py-3">
                 <div class="media">
 
-                    <div class="media-body text-white text-center">
-                        <h3 class="text-white">Community</h3>
+                    <div class="media-body text-white text-center" style="cursor: pointer;">
+                        <h3 class="text-white" style="font-size: 1.4rem !important;">Community</h3>
 
                     </div>
                 </div>
@@ -309,8 +449,8 @@
             <div class="px-3 py-3">
                 <div class="media">
 
-                    <div class="media-body text-white text-center">
-                        <h3 class="text-white">Campaign</h3>
+                    <div class="media-body text-white text-center" style="cursor: pointer;">
+                        <h3 class="text-white" style="font-size: 1.4rem !important;">Campaign</h3>
 
                     </div>
                 </div>
@@ -322,8 +462,8 @@
             <div class="px-3 py-3">
                 <div class="media">
 
-                    <div class="media-body text-white text-center">
-                        <h3 class="text-white">Customer View</h3>
+                    <div class="media-body text-white text-center" style="cursor: pointer;">
+                        <h3 class="text-white" style="font-size: 1.4rem !important;">Customer View</h3>
 
                     </div>
                 </div>
@@ -335,8 +475,8 @@
             <div class="px-3 py-3">
                 <div class="media">
 
-                    <div class="media-body text-white text-center">
-                        <h3 class="text-white">ShopBuzz</h3>
+                    <div class="media-body text-white text-center" style="cursor: pointer;">
+                        <h3 class="text-white" style="font-size: 1.4rem !important;">ShopBuzz</h3>
 
                     </div>
                 </div>
@@ -348,8 +488,8 @@
             <div class="px-3 py-3">
                 <div class="media">
 
-                    <div class="media-body text-white text-center">
-                        <h3 class="text-white">Loyalty</h3>
+                    <div class="media-body text-white text-center" style="cursor: pointer;">
+                        <h3 class="text-white" style="font-size: 1.4rem !important;">Loyalty</h3>
 
                     </div>
                 </div>
@@ -361,8 +501,8 @@
             <div class="px-3 py-3">
                 <div class="media">
 
-                    <div class="media-body text-white text-center">
-                        <h3 class="text-white">Setting</h3>
+                    <div class="media-body text-white text-center" style="cursor: pointer;">
+                        <h3 class="text-white" style="font-size: 1.4rem !important;">Setting</h3>
                     </div>
                 </div>
             </div>
