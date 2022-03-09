@@ -190,3 +190,38 @@
 //     border: 2px solid #FF9933;
 //   }
 // // Widget area 3 Chart CSS Ends
+.text-ic {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.durationtab {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #bac2db;
+    width: max-content;
+}
+
+.d-item {
+    padding: 12px;
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.d-item-active {
+    background-color: #ffffff;
+    font-weight: 600;
+}
+
+.avatar-xs {
+    margin-right: 10px !important;
+}

@@ -1,8 +1,9 @@
-import { Component,ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import * as Chartist from 'chartist';
 import { ChartType, ChartEvent } from "ng-chartist";
 import { DatatableComponent } from "@swimlane/ngx-datatable/release";
 //import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 declare var require: any;
 const topUserData: any = require('../../shared/data/company.json');
@@ -33,8 +34,10 @@ export class EcommerceComponent {
         { name: 'Last Activity' }
     ];
     @ViewChild(DatatableComponent, { static: true }) table: DatatableComponent;
+    title: any;
+    activeDuration: any = 'daily';
 
-    constructor() {
+    constructor(private modalService: NgbModal) {
         this.temp = [...topUserData];
         this.rows = topUserData;
     }
@@ -53,64 +56,64 @@ export class EcommerceComponent {
         this.table.offset = 0;
     }
 
- // Line Chart Starts
- lineChart: Chart = {
-    type: 'Line',
-    data: data['line'],
-    options: {
-        low: 0,
-        fullWidth: true,
-        onlyInteger: true,
-        chartPadding: {
-            right: 20
-        },
-        axisY: {
+    // Line Chart Starts
+    lineChart: Chart = {
+        type: 'Line',
+        data: data['line'],
+        options: {
             low: 0,
-            scaleMinSpace: 60,
-            labelInterpolationFnc: function labelInterpolationFnc(value) {
-                return value / 1000 + 'K';
+            fullWidth: true,
+            onlyInteger: true,
+            chartPadding: {
+                right: 20
             },
+            axisY: {
+                low: 0,
+                scaleMinSpace: 60,
+                labelInterpolationFnc: function labelInterpolationFnc(value) {
+                    return value / 1000 + 'K';
+                },
+            },
+            axisX: {
+                showGrid: false
+            },
+            lineSmooth: Chartist.Interpolation.simple({
+                divisor: 2
+            }),
         },
-        axisX: {
-            showGrid: false
-        },
-        lineSmooth: Chartist.Interpolation.simple({
-            divisor: 2
-        }),
-    },
-    events: {
-        created(data: any): void {
-            var defs = data.svg.elem('defs');
-            defs.elem('linearGradient', {
-                id: 'linear1',
-                x1: 1,
-                y1: 0,
-                x2: 0,
-                y2: 0
-            }).elem('stop', {
-                offset: 0,
-                'stop-color': 'rgba(185,168,231, 1)'
-            }).parent().elem('stop', {
-                offset: 1,
-                'stop-color': 'rgba(118,74,233, 1)'
-            });
-        },
-        draw(data: any): void {
-            if (data.type === 'point') {
-               
-                var circle = new Chartist.Svg('circle', {
-                    cx: data.x,
-                    cy: data.y,
-                    r: [10],
-                    class: data.value.y === 0 || data.value.y === 6800 ? 'ct-circle-transperent' :  'ct-circle'
+        events: {
+            created(data: any): void {
+                var defs = data.svg.elem('defs');
+                defs.elem('linearGradient', {
+                    id: 'linear1',
+                    x1: 1,
+                    y1: 0,
+                    x2: 0,
+                    y2: 0
+                }).elem('stop', {
+                    offset: 0,
+                    'stop-color': 'rgba(185,168,231, 1)'
+                }).parent().elem('stop', {
+                    offset: 1,
+                    'stop-color': 'rgba(118,74,233, 1)'
                 });
-                data.element.replace(circle);
-            }
-        }
+            },
+            draw(data: any): void {
+                if (data.type === 'point') {
 
-    },
-};
-// Line Chart Ends
+                    var circle = new Chartist.Svg('circle', {
+                        cx: data.x,
+                        cy: data.y,
+                        r: [10],
+                        class: data.value.y === 0 || data.value.y === 6800 ? 'ct-circle-transperent' : 'ct-circle'
+                    });
+                    data.element.replace(circle);
+                }
+            }
+
+        },
+    };
+    // Line Chart Ends
 
     // Stacked Bar chart configuration Starts
     Stackbarchart: Chart = {
@@ -421,7 +424,7 @@ export class EcommerceComponent {
                     y1: data.chartRect.y1,
                     y2: data.chartRect.y2
                 }, data.options.targetLine.class);
-               
+
             },
             draw(data: any): void {
                 var circleRadius = 10;
@@ -497,7 +500,7 @@ export class EcommerceComponent {
                     y1: data.chartRect.y1,
                     y2: data.chartRect.y2
                 }, data.options.targetLine.class);
-                
+
             },
             draw(data: any): void {
                 var circleRadius = 10;
@@ -573,7 +576,7 @@ export class EcommerceComponent {
                     y1: data.chartRect.y1,
                     y2: data.chartRect.y2
                 }, data.options.targetLine.class);
-               
+
             },
             draw(data: any): void {
                 var circleRadius = 10;
@@ -594,6 +597,31 @@ export class EcommerceComponent {
 
     };
     // Widget Area chart 3 configuration Ends
+
+
+
+
+
+    GetDetails(content, titleText) {
+        this.title = titleText;
+        this.modalService.open(content, { size: 'lg' }).result.then((result) => {
+        }, (reason) => {
+        });
+    }
+
+    GetDetailstable(content1, titleText) {
+        this.title = titleText;
+        this.modalService.open(content1, { size: 'lg' }).result.then((result) => {
+        }, (reason) => {
+        });
+    }
+    GetDetailstable2(content2, titleText) {
+        this.title = titleText;
+        this.modalService.open(content2, { size: 'lg' }).result.then((result) => {
+        }, (reason) => {
+        });
+    }
+
 
 
 }
