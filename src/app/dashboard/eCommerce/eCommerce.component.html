@@ -212,139 +212,137 @@
 
                 </div>
             </div>
-
         </div>
+
     </div>
-    <div>
-        <div class="card" style="height: 540px;">
-            <div class="card-header">
-                <div class="card-title-wrap bar-danger">
-                    <h4 class="card-title font">Top Active Users</h4>
-                    <!-- <span style="margin-left: 40em;"><input type='text' style='padding:8px;margin:15px auto;width:30%;' placeholder='Type to filter the name column...' (keyup)='updateFilter($event)'
+</div>
+<div>
+    <div class="card" style="height: 540px;">
+        <div class="card-header">
+            <div class="card-title-wrap bar-danger">
+                <h4 class="card-title font">Top Active Users</h4>
+                <!-- <span style="margin-left: 40em;"><input type='text' style='padding:8px;margin:15px auto;width:30%;' placeholder='Type to filter the name column...' (keyup)='updateFilter($event)'
               /></span> -->
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="card-block">
+                <div class="table-responsive">
+                    <table id="recent-orders" class="table table-hover table-xl mb-0">
+                        <thead>
+                            <tr>
+                                <th class="border-top-0">Name</th>
+                                <th class="border-top-0">City/Region</th>
+                                <th class="border-top-0">Loyalty Points</th>
+                                <th class="border-top-0">Last Activity</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 57px !important;">
+
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs" style="cursor: pointer;">
+                                        <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-4.jpg"
+                                            alt="avatar">
+                                    </span>
+                                    <span>Elizabeth W.</span>
+                                </td>
+                                <td>Europe</td>
+                                <td>
+                                    9
+                                </td>
+                                <td>
+                                    26/02/2022
+                                </td>
+
+                            </tr>
+                            <tr style="height: 59px !important;">
+
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs" style="cursor: pointer;">
+                                        <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-5.jpg"
+                                            alt="avatar">
+                                    </span>
+                                    <span>Doris R.</span>
+                                </td>
+                                <td>Europe</td>
+                                <td>
+                                    8
+                                </td>
+                                <td>
+                                    26/02/2022
+                                </td>
+
+                            </tr>
+                            <tr style="height: 56px !important;">
+
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs" style="cursor: pointer;">
+                                        <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-6.jpg"
+                                            alt="avatar">
+                                    </span>
+                                    <span>Megan S.</span>
+                                </td>
+                                <td>Asia</td>
+                                <td>
+                                    7.5
+                                </td>
+                                <td>
+                                    25/02/2022
+                                </td>
+
+                            </tr>
+                            <tr style="height: 58px !important;">
+
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs" style="cursor: pointer;">
+                                        <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-7.jpg"
+                                            alt="avatar">
+                                    </span>
+                                    <span>Andrew D.</span>
+                                </td>
+                                <td>Europe</td>
+                                <td>
+                                    7.1
+                                </td>
+                                <td>
+                                    11/01/2022
+                                </td>
+
+                            </tr>
+                            <tr style="height: 59px !important;">
+
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs" style="cursor: pointer;">
+                                        <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-9.jpg"
+                                            alt="avatar">
+                                    </span>
+                                    <span>Walter R.</span>
+                                </td>
+                                <td>Asia</td>
+                                <td>
+                                    6
+                                </td>
+                                <td>
+                                    05/02/2022
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="card-body">
-                <div class="card-block">
-                    <div class="table-responsive">
-                        <table id="recent-orders" class="table table-hover table-xl mb-0">
-                            <thead>
-                                <tr>
-                                    <th class="border-top-0">Name</th>
-                                    <th class="border-top-0">City/Region</th>
-                                    <th class="border-top-0">Loyalty Points</th>
-                                    <th class="border-top-0">Last Activity</th>
 
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr style="height: 57px !important;">
+            <div>
+                <button class="btn btn-primary mx-3" (click)="GetDetailstable2(content2, 'Top Active Users')">
+                    <i class="fa fa-arrows-alt  text-white  font-medium-3"></i>
+                </button>
 
-                                    <td class="text-truncate">
-                                        <span class="avatar avatar-xs" style="cursor: pointer;">
-                                            <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-4.jpg"
-                                                alt="avatar">
-                                        </span>
-                                        <span>Elizabeth W.</span>
-                                    </td>
-                                    <td>Europe</td>
-                                    <td>
-                                        9
-                                    </td>
-                                    <td>
-                                        26/02/2022
-                                    </td>
-
-                                </tr>
-                                <tr style="height: 59px !important;">
-
-                                    <td class="text-truncate">
-                                        <span class="avatar avatar-xs" style="cursor: pointer;">
-                                            <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-5.jpg"
-                                                alt="avatar">
-                                        </span>
-                                        <span>Doris R.</span>
-                                    </td>
-                                    <td>Europe</td>
-
-                                    <td>
-                                        8
-                                    </td>
-                                    <td>
-                                        26/02/2022
-                                    </td>
-
-                                </tr>
-                                <tr style="height: 56px !important;">
-
-                                    <td class="text-truncate">
-                                        <span class="avatar avatar-xs" style="cursor: pointer;">
-                                            <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-6.jpg"
-                                                alt="avatar">
-                                        </span>
-                                        <span>Megan S.</span>
-                                    </td>
-                                    <td>Asia</td>
-
-                                    <td>
-                                        7.5
-                                    </td>
-                                    <td>
-                                        25/02/2022
-                                    </td>
-
-                                </tr>
-                                <tr style="height: 58px !important;">
-
-                                    <td class="text-truncate">
-                                        <span class="avatar avatar-xs" style="cursor: pointer;">
-                                            <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-7.jpg"
-                                                alt="avatar">
-                                        </span>
-                                        <span>Andrew D.</span>
-                                    </td>
-                                    <td>Europe</td>
-                                    <td>
-                                        7.1
-                                    </td>
-                                    <td>
-                                        11/01/2022
-                                    </td>
-
-                                </tr>
-                                <tr style="height: 59px !important;">
-
-                                    <td class="text-truncate">
-                                        <span class="avatar avatar-xs" style="cursor: pointer;">
-                                            <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-9.jpg"
-                                                alt="avatar">
-                                        </span>
-                                        <span>Walter R.</span>
-                                    </td>
-                                    <td>Asia</td>
-
-                                    <td>
-                                        6
-                                    </td>
-                                    <td>
-                                        05/02/2022
-                                    </td>
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div>
-                    <button class="btn btn-primary mx-3" (click)="GetDetailstable2(content2, 'Top Active Users')">
-                        <i class="fa fa-arrows-alt  text-white  font-medium-3"></i>
-                    </button>
-
-                </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 
@@ -437,33 +435,53 @@
                         <tbody>
                             <tr>
                                 <td class="text-truncate">ABC</td>
-                                <td class="text-truncate">Jim</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs" style="cursor: pointer;">
+                                        <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-4.jpg"
+                                            alt="avatar">
+                                    </span>Jim
+                                </td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
+                                    Pass
                                 </td>
 
                             </tr>
                             <tr>
                                 <td class="text-truncate">EFG</td>
-                                <td class="text-truncate">Jack</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs" style="cursor: pointer;">
+                                        <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-5.jpg"
+                                            alt="avatar">
+                                    </span>Jack
+                                </td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-success round mb-0" type="button">Tablet</button>
+                                    Fail
                                 </td>
 
                             </tr>
                             <tr>
                                 <td class="text-truncate">PQR</td>
-                                <td class="text-truncate">Dolly</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs" style="cursor: pointer;">
+                                        <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-6.jpg"
+                                            alt="avatar">
+                                    </span> Dolly
+                                </td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
+                                    Pass
                                 </td>
 
                             </tr>
                             <tr>
                                 <td class="text-truncate">XYZ</td>
-                                <td class="text-truncate">Sam</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs" style="cursor: pointer;">
+                                        <img class="box-shadow-2" src="assets/img/portrait/small/avatar-s-7.jpg"
+                                            alt="avatar">
+                                    </span> Sam
+                                </td>
                                 <td>
-                                    <button class="btn btn-sm btn-outline-success round mb-0" type="button">Tablet</button>
+                                    Pass
                                 </td>
 
                             </tr>
