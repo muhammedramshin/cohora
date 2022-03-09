@@ -57,8 +57,8 @@ export const ROUTES: RouteInfo[] = [
         ]
     },
     {
-        path: 'loyality', title: 'Loyality', icon: 'fa fa-gift', class: 'has-sub', badge: '', badgeClass: 'badge badge-pill badge-danger mt-1', isExternalLink: false, submenu: [
-            { path: 'community', title: 'Loyality', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+        path: 'loyalty', title: 'Loyalty', icon: 'fa fa-gift', class: 'has-sub', badge: '', badgeClass: 'badge badge-pill badge-danger mt-1', isExternalLink: false, submenu: [
+            { path: 'community', title: 'Loyalty', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/community', title: 'Voucher', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/community', title: 'Wallet', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
 
