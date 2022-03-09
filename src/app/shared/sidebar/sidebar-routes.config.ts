@@ -10,9 +10,71 @@ export const ROUTES: RouteInfo[] = [
         ]
     },
     {
+        path: '', title: 'Cohora Iq', icon: 'icon-home', class: 'has-sub', badge: '', badgeClass: 'badge badge-pill badge-danger mt-1', isExternalLink: false, submenu: [
+            { path: '/dashboard/home', title: 'Traffics Heatmap/Live', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Action Dashboard', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Visit Details', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Sentiment(emojis stats)', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'ThoughtSpot', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+        ]
+    },
+    {
+        path: '', title: 'Community Management', icon: 'icon-home', class: 'has-sub', badge: '', badgeClass: 'badge badge-pill badge-danger mt-1', isExternalLink: false, submenu: [
+            { path: '/dashboard/home', title: 'Home Feed', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Curation Library', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Chatroom', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Quiz', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Survey', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Poll', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Contest', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Notification message', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+        ]
+    },
+    {
+        path: '', title: 'Customer View', icon: 'icon-home', class: 'has-sub', badge: '', badgeClass: 'badge badge-pill badge-danger mt-1', isExternalLink: false, submenu: [
+            { path: '/dashboard/home', title: 'Customer Overview', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Guest Overview', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Import Customer', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Customer Tags', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Export Customers', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Segmentation', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+        ]
+    },
+    {
+        path: '', title: 'Campaigns Management', icon: 'icon-home', class: 'has-sub', badge: '', badgeClass: 'badge badge-pill badge-danger mt-1', isExternalLink: false, submenu: [
+            { path: '/dashboard/home', title: 'Campaign setup', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'View Campaign', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+
+        ]
+    },
+    {
+        path: '', title: 'ShopBuzz Ads', icon: 'icon-home', class: 'has-sub', badge: '', badgeClass: 'badge badge-pill badge-danger mt-1', isExternalLink: false, submenu: [
+            { path: '/dashboard/home', title: 'Product Tags Setup', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Product Tags Library', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Product Ads Setup', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Product Ads Widget', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+
+        ]
+    },
+    {
+        path: '', title: 'Loyality Management', icon: 'icon-home', class: 'has-sub', badge: '', badgeClass: 'badge badge-pill badge-danger mt-1', isExternalLink: false, submenu: [
+            { path: '/dashboard/home', title: 'Loyality', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Voucher', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: 'Wallet', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+
+        ]
+    },
+    {
+        path: '', title: 'Setting', icon: 'icon-home', class: 'has-sub', badge: '', badgeClass: 'badge badge-pill badge-danger mt-1', isExternalLink: false, submenu: [
+            { path: '/dashboard/home', title: 'Company', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard', title: '3rd Integration', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+
+        ]
+    },
+    {
         path: '', title: 'Apps', icon: 'icon-screen-desktop', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false,
         submenu: [
-            
+
             { path: '/chat', title: 'Chat', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/chat-ngrx', title: 'Chat NgRx', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/taskboard', title: 'Task Board', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
