@@ -104,7 +104,6 @@ import { SelectComponent } from './extra/select/select.component';
         SwitchComponent,
         PlayerComponent,
         SelectComponent
-    ],
-    entryComponents: [NgbdModalContent]
+    ]
 })
 export class UIComponentsModule { }
